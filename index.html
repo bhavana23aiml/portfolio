@@ -1,32 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bhavana M | AI & ML Portfolio</title>
-  <meta name="description" content="Portfolio of Bhavana M — AI & ML Engineer | Python | SQL | Projects | GitHub" />
+  <meta name="description" content="Bhavana M — AI & Machine Learning | Python | NLP | FastAPI | SQL" />
+
+  <!-- Premium Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- Background Effects -->
-  <div class="bg">
+  <!-- Background -->
+  <div class="bg" aria-hidden="true">
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
     <div class="grid"></div>
   </div>
 
-  <!-- Top Nav -->
+  <!-- NAV -->
   <header class="nav">
-    <a class="brand" href="#top" aria-label="Go to top">
-      <span class="logo">B</span>
-      <span class="brand-text">Bhavana<span class="muted">.dev</span></span>
+    <a class="brand" href="#top" aria-label="Home">
+      <div class="logo">B</div>
+      <div class="brand-text">Bhavana <span class="muted">.dev</span></div>
     </a>
 
-    <nav class="nav-links" aria-label="Main navigation">
+    <nav class="nav-links" aria-label="Primary">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
@@ -35,12 +38,13 @@
     </nav>
 
     <div class="nav-actions">
-      <button id="themeToggle" class="btn btn-ghost" type="button" aria-label="Toggle theme">
-        <span class="icon" aria-hidden="true">◐</span>
+      <button id="themeToggle" class="btn btn-ghost" type="button" aria-label="Toggle Theme">
+        <span class="icon">◐</span>
         <span class="hide-sm">Theme</span>
       </button>
       <a class="btn btn-primary" href="resume.pdf" download>
-        Download Resume
+        <span class="icon">⬇</span>
+        <span class="hide-sm">Download Resume</span>
       </a>
     </div>
 
@@ -49,35 +53,36 @@
     </button>
   </header>
 
-  <!-- Mobile Drawer -->
-  <aside id="drawer" class="drawer" aria-hidden="true">
-    <div class="drawer-card">
+  <!-- MOBILE DRAWER -->
+  <div id="drawer" class="drawer" aria-hidden="true">
+    <div class="drawer-card" role="dialog" aria-modal="true" aria-label="Menu">
       <div class="drawer-top">
         <div class="drawer-title">Menu</div>
         <button id="closeDrawer" class="btn btn-ghost" type="button" aria-label="Close menu">✕</button>
       </div>
-      <a href="#about" class="drawer-link">About</a>
-      <a href="#skills" class="drawer-link">Skills</a>
-      <a href="#projects" class="drawer-link">Projects</a>
-      <a href="#github" class="drawer-link">GitHub</a>
-      <a href="#contact" class="drawer-link">Contact</a>
+
+      <a class="drawer-link" href="#about">About</a>
+      <a class="drawer-link" href="#skills">Skills</a>
+      <a class="drawer-link" href="#projects">Projects</a>
+      <a class="drawer-link" href="#github">GitHub</a>
+      <a class="drawer-link" href="#contact">Contact</a>
+
       <div class="drawer-actions">
-        <button id="themeToggle2" class="btn btn-ghost" type="button">
-          ◐ Toggle Theme
+        <button id="themeToggle2" class="btn" type="button">
+          <span class="icon">◐</span> Toggle Theme
         </button>
-        <a class="btn btn-primary" href="resume.pdf" download>Download Resume</a>
+        <a class="btn btn-primary" href="resume.pdf" download>
+          <span class="icon">⬇</span> Download Resume
+        </a>
       </div>
     </div>
-  </aside>
+  </div>
 
   <main id="top" class="container">
     <!-- HERO -->
     <section class="hero">
-      <div class="hero-left">
-        <div class="pill">
-          <span class="dot"></span>
-          AI & ML • Python • SQL • Projects
-        </div>
+      <div>
+        <div class="pill"><span class="dot"></span> AI & ML • Python • SQL • NLP • Projects</div>
 
         <h1 class="title">
           Hi, I’m <span class="grad">Bhavana M</span><br />
@@ -85,27 +90,23 @@
         </h1>
 
         <p class="lead">
-          I build data-driven solutions with Machine Learning, Python, and practical problem-solving.
-          I enjoy creating accessible systems like voice-based assistants and intelligent analytics.
+          I build data-driven solutions using Machine Learning, Python, and practical problem-solving.
+          I enjoy working on accessible AI systems like voice-based assistants and intelligent analytics tools.
         </p>
 
         <div class="hero-cta">
           <a class="btn btn-primary" href="#projects">View Projects</a>
-          <a class="btn btn-ghost" href="https://github.com/bhavana23aiml" target="_blank" rel="noreferrer">
-            GitHub ↗
-          </a>
-          <a class="btn btn-ghost" href="https://www.linkedin.com/in/bhavana-m-a164842bb" target="_blank" rel="noreferrer">
-            LinkedIn ↗
-          </a>
+          <a class="btn" href="https://github.com/bhavana23aiml" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a class="btn" href="https://www.linkedin.com/in/bhavana-m-a164842bb" target="_blank" rel="noreferrer">LinkedIn ↗</a>
         </div>
 
         <div class="stats">
           <div class="stat">
-            <div class="stat-num">9.0</div>
+            <div class="stat-num">8.64</div>
             <div class="stat-label">GPA</div>
           </div>
           <div class="stat">
-            <div class="stat-num">2+</div>
+            <div class="stat-num">4+</div>
             <div class="stat-label">Projects</div>
           </div>
           <div class="stat">
@@ -115,52 +116,57 @@
         </div>
       </div>
 
-      <div class="hero-right">
-        <div class="profile-card">
-          <div class="avatar">
-            <!-- Optional: place assets/avatar.jpg -->
-            <img src="assets/avatar.jpg" alt="Bhavana M" onerror="this.style.display='none'; this.parentElement.classList.add('avatar-fallback');" />
-            <span class="avatar-letter">B</span>
-          </div>
-          <div class="profile-meta">
-            <div class="name">Bhavana M</div>
-            <div class="role">AI & ML Engineer • Bangalore</div>
-          </div>
+      <!-- PROFILE CARD -->
+      <aside class="card profile-card">
+        <div class="avatar avatar-fallback" aria-label="Profile picture">
+          <!-- Optional: add your image file and uncomment below -->
+          <!-- <img src="profile.jpg" alt="Bhavana M" /> -->
+          <div class="avatar-letter">B</div>
+        </div>
 
-          <div class="quick">
-            <div class="quick-row">
-              <span class="badge">Python</span>
-              <span class="badge">Machine Learning</span>
-              <span class="badge">SQL</span>
-            </div>
-            <div class="quick-row">
-              <span class="badge ghost">Speech / Voice AI</span>
-              <span class="badge ghost">Data Preprocessing</span>
-            </div>
-          </div>
+        <div class="profile-meta">
+          <div class="name">Bhavana M</div>
+          <div class="role">AI & ML Engineer • Bangalore</div>
+        </div>
 
-          <div class="profile-actions">
-            <a class="btn btn-primary btn-full" href="#contact">Contact Me</a>
-            <a class="btn btn-ghost btn-full" href="resume.pdf" download>Download Resume</a>
+        <div class="quick">
+          <div class="quick-row">
+            <span class="badge">Python</span>
+            <span class="badge">Machine Learning</span>
+            <span class="badge">SQL</span>
+          </div>
+          <div class="quick-row">
+            <span class="badge">FastAPI</span>
+            <span class="badge">NLP</span>
+            <span class="badge">Data Preprocessing</span>
           </div>
         </div>
-      </div>
+
+        <div class="profile-actions">
+          <a class="btn btn-primary btn-full" href="#contact">Contact Me</a>
+          <a class="btn btn-full" href="resume.pdf" download>Download Resume</a>
+        </div>
+      </aside>
     </section>
 
     <!-- ABOUT -->
     <section id="about" class="section">
       <div class="section-head">
-        <h2>About</h2>
-        <p class="muted">A quick snapshot of who I am and what I’m aiming for.</p>
+        <div>
+          <h2>About</h2>
+          <p class="muted">A quick snapshot of who I am and what I’m aiming for.</p>
+        </div>
       </div>
 
       <div class="grid-2">
         <div class="card">
           <h3>Professional Summary</h3>
-          <p>
+          <p class="muted small">
             I’m an AI & ML fresher with strong fundamentals in ML algorithms, Python programming, and data-driven problem solving.
-            I’ve worked on voice-based systems and practical ML classification tasks, and I’m actively building projects that are deployable and scalable.
+            I’ve built resume-analysis tools, voice-based systems, and practical ML classification projects — and I focus on building
+            deployable, scalable solutions.
           </p>
+
           <div class="mini-list">
             <div class="mini-item">✅ Data preprocessing & model evaluation</div>
             <div class="mini-item">✅ Practical ML models + feature engineering</div>
@@ -173,28 +179,25 @@
           <div class="timeline">
             <div class="t-item">
               <div class="t-dot"></div>
-              <div class="t-content">
-                <div class="t-title">Intern — S&I</div>
-                <div class="t-sub muted">Sep 2025 – Present</div>
-                <div class="t-text">Analyzed real-world problems and broke them into structured steps. Built optimized solutions using algorithmic thinking.</div>
+              <div>
+                <div class="t-title">AI Program Trainee — Samsung Innovation Campus</div>
+                <div class="t-text">Jul 2025 – Present • Hands-on ML concepts, projects, problem-solving and guided AI development.</div>
               </div>
             </div>
 
             <div class="t-item">
               <div class="t-dot"></div>
-              <div class="t-content">
-                <div class="t-title">3D Design Intern — Galatic</div>
-                <div class="t-sub muted">Nov 2025 – Present</div>
-                <div class="t-text">Created/modified 3D models, optimized assets, collaborated on workflows, and documented improvements.</div>
+              <div>
+                <div class="t-title">3D Design Intern — Galactic 3D Pvt Ltd</div>
+                <div class="t-text">Sep 2025 – Jan 2026 • 3D models, optimization, workflow collaboration and documentation.</div>
               </div>
             </div>
           </div>
 
-          <div class="edu">
-            <h4>Education</h4>
-            <p><strong>B.E. in Artificial Intelligence & Machine Learning</strong><br />
-              Cambridge Institute of Technology • GPA: 9 • Expected: May 2027</p>
-            <p><strong>Certification:</strong> Data Science for Engineers — IIT Madras</p>
+          <h4>Education</h4>
+          <div class="edu muted small">
+            B.E. in Artificial Intelligence & Machine Learning — Cambridge Institute of Technology<br />
+            Expected: Jun 2027 • GPA: 8.64
           </div>
         </div>
       </div>
@@ -203,25 +206,31 @@
     <!-- SKILLS -->
     <section id="skills" class="section">
       <div class="section-head">
-        <h2>Skills</h2>
-        <p class="muted">Core strengths with a clean visual overview.</p>
+        <div>
+          <h2>Skills</h2>
+          <p class="muted">Core strengths with a clean visual overview.</p>
+        </div>
       </div>
 
       <div class="grid-3">
         <div class="card">
           <h3>AI / ML</h3>
           <div class="bars">
-            <div class="bar">
+            <div>
               <div class="bar-top"><span>Machine Learning</span><span class="muted">Strong</span></div>
-              <div class="bar-track"><div class="bar-fill" style="width: 86%"></div></div>
+              <div class="bar-track"><div class="bar-fill" style="width: 88%"></div></div>
             </div>
-            <div class="bar">
+            <div>
               <div class="bar-top"><span>Data Analysis</span><span class="muted">Strong</span></div>
-              <div class="bar-track"><div class="bar-fill" style="width: 82%"></div></div>
+              <div class="bar-track"><div class="bar-fill" style="width: 84%"></div></div>
             </div>
-            <div class="bar">
-              <div class="bar-top"><span>Deep Learning Basics</span><span class="muted">Growing</span></div>
-              <div class="bar-track"><div class="bar-fill" style="width: 62%"></div></div>
+            <div>
+              <div class="bar-top"><span>NLP</span><span class="muted">Growing</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width: 72%"></div></div>
+            </div>
+            <div>
+              <div class="bar-top"><span>Deep Learning</span><span class="muted">Basics</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width: 58%"></div></div>
             </div>
           </div>
         </div>
@@ -233,10 +242,12 @@
             <span class="chip">SQL</span>
             <span class="chip">DSA</span>
             <span class="chip">OOP</span>
-            <span class="chip">APIs</span>
-            <span class="chip">Data Preprocessing</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">FastAPI</span>
           </div>
-          <div class="note muted">Tip: Add your top libraries here (NumPy, Pandas, scikit-learn, etc.).</div>
+          <p class="note muted small">
+            Tip: Add your top libraries here (NumPy, Pandas, scikit-learn, etc.).
+          </p>
         </div>
 
         <div class="card">
@@ -249,7 +260,37 @@
             <span class="chip">Leadership</span>
             <span class="chip">Public Speaking</span>
           </div>
-          <div class="note muted">Achievements: event management, volunteering, anchoring, AI collaborations.</div>
+
+          <p class="note muted small">
+            Achievements: event management, volunteering, anchoring, and AI collaborations.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-top:14px">
+        <div class="card">
+          <h3>Certifications</h3>
+          <div class="mini-list">
+            <div class="mini-item">• Intro to Machine Learning — Kaggle</div>
+            <div class="mini-item">• Data Science for Engineers — IIT Madras</div>
+            <div class="mini-item">• SQL & Relational Databases 101 — IBM</div>
+            <div class="mini-item">• Agile Project Management — HP LIFE</div>
+            <div class="mini-item">• Google Analytics Certification — Google</div>
+            <div class="mini-item">• Content Marketing — HubSpot Academy</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>What I’m building next</h3>
+          <p class="muted small">
+            Resume + Job matching, skill-gap roadmap generation, and voice-first assistants — with clean UI and deployable APIs.
+          </p>
+          <div class="chip-wrap">
+            <span class="chip">ATS Resume Scoring</span>
+            <span class="chip">Skill Gap Roadmaps</span>
+            <span class="chip">Voice AI</span>
+            <span class="chip">Backend APIs</span>
+          </div>
         </div>
       </div>
     </section>
@@ -257,46 +298,87 @@
     <!-- PROJECTS -->
     <section id="projects" class="section">
       <div class="section-head">
-        <h2>Projects</h2>
-        <p class="muted">Highlighted work (add links whenever you have them).</p>
+        <div>
+          <h2>Projects</h2>
+          <p class="muted">Highlighted work (add links whenever you have them).</p>
+        </div>
       </div>
 
       <div class="project-grid">
-        <article class="project card">
+        <article class="card project">
+          <div class="project-top">
+            <div class="project-title">AI Resume Optimization System</div>
+            <span class="tag">NLP</span>
+          </div>
+          <p class="muted small">
+            An AI-powered platform to improve ATS compatibility and job-role matching using resume parsing, keyword extraction,
+            and semantic similarity scoring.
+          </p>
+          <div class="project-bullets">
+            <div>• Resume parsing + keyword extraction pipeline</div>
+            <div>• Job-role similarity scoring + skill-gap detection</div>
+            <div>• API-first architecture for scalability (FastAPI + SQL)</div>
+          </div>
+          <div class="project-actions">
+            <a class="btn" href="https://github.com/bhavana23aiml" target="_blank" rel="noreferrer">Code ↗</a>
+            <a class="btn btn-primary" href="#contact">Request Demo</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="project-top">
+            <div class="project-title">AI Digital Career Advisor Twin</div>
+            <span class="tag">ML</span>
+          </div>
+          <p class="muted small">
+            Career guidance system that recommends roles and generates personalized roadmaps using role-fit prediction and skill-gap analysis.
+          </p>
+          <div class="project-bullets">
+            <div>• Role fit prediction</div>
+            <div>• Skill gap detection</div>
+            <div>• Roadmap generation (step-by-step learning path)</div>
+          </div>
+          <div class="project-actions">
+            <a class="btn" href="https://github.com/bhavana23aiml" target="_blank" rel="noreferrer">Code ↗</a>
+            <a class="btn btn-primary" href="#contact">Collaborate</a>
+          </div>
+        </article>
+
+        <article class="card project">
           <div class="project-top">
             <div class="project-title">Voice-Based Transport Enquiry System</div>
-            <div class="tag">Voice AI</div>
+            <span class="tag">Voice AI</span>
           </div>
-          <p class="muted">
+          <p class="muted small">
             Hands-free transport information system: captures speech, converts to text, detects intent, and returns relevant transport details.
           </p>
           <div class="project-bullets">
-            <div>• Speech-to-text + intent detection pipeline</div>
+            <div>• Speech-to-text + intent detection</div>
             <div>• Designed for accessibility and faster queries</div>
             <div>• API-ready backend approach</div>
           </div>
           <div class="project-actions">
-            <a class="btn btn-ghost" href="https://github.com/bhavana23aiml" target="_blank" rel="noreferrer">Code ↗</a>
-            <a class="btn btn-ghost" href="#contact">Request Demo</a>
+            <a class="btn" href="https://github.com/bhavana23aiml" target="_blank" rel="noreferrer">Code ↗</a>
+            <a class="btn btn-primary" href="#contact">Request Demo</a>
           </div>
         </article>
 
-        <article class="project card">
+        <article class="card project">
           <div class="project-top">
-            <div class="project-title">Voice-Based Stress Detection System</div>
-            <div class="tag">ML</div>
+            <div class="project-title">Voice-Based Stress Detection</div>
+            <span class="tag">Audio ML</span>
           </div>
-          <p class="muted">
+          <p class="muted small">
             Detects stress from speech by extracting acoustic features (pitch, energy, MFCCs) and classifying using ML models.
           </p>
           <div class="project-bullets">
             <div>• Feature extraction + preprocessing</div>
             <div>• Real-time analysis concept</div>
-            <div>• Useful for HCI and mental health monitoring</div>
+            <div>• Useful for HCI and emotion monitoring</div>
           </div>
           <div class="project-actions">
-            <a class="btn btn-ghost" href="https://github.com/bhavana23aiml" target="_blank" rel="noreferrer">Code ↗</a>
-            <a class="btn btn-ghost" href="#contact">Collaborate</a>
+            <a class="btn" href="https://github.com/bhavana23aiml" target="_blank" rel="noreferrer">Code ↗</a>
+            <a class="btn btn-primary" href="#contact">Collaborate</a>
           </div>
         </article>
       </div>
@@ -305,19 +387,22 @@
     <!-- GITHUB -->
     <section id="github" class="section">
       <div class="section-head">
-        <h2>GitHub Repositories</h2>
-        <p class="muted">Auto-fetched from your GitHub profile (public repos).</p>
+        <div>
+          <h2>GitHub Repositories</h2>
+          <p class="muted">Auto-fetched from your GitHub profile (public repos).</p>
+        </div>
+        <a class="btn" href="https://github.com/bhavana23aiml" target="_blank" rel="noreferrer">Open GitHub ↗</a>
       </div>
 
-      <div class="github-controls card">
+      <div class="card github-controls">
         <div class="row">
           <div class="input-wrap">
-            <label for="repoSearch" class="muted">Search repos</label>
-            <input id="repoSearch" type="text" placeholder="e.g., voice, ml, python..." />
+            <label class="muted small" for="repoSearch">Search repos</label>
+            <input id="repoSearch" type="text" placeholder="e.g., resume, voice, ml..." />
           </div>
 
           <div class="input-wrap">
-            <label for="repoSort" class="muted">Sort</label>
+            <label class="muted small" for="repoSort">Sort</label>
             <select id="repoSort">
               <option value="updated">Recently updated</option>
               <option value="stars">Most starred</option>
@@ -325,20 +410,27 @@
             </select>
           </div>
 
-          <a class="btn btn-primary" href="https://github.com/bhavana23aiml" target="_blank" rel="noreferrer">Open GitHub ↗</a>
+          <div class="input-wrap">
+            <label class="muted small">&nbsp;</label>
+            <div id="repoStatus" class="muted small">Loading…</div>
+          </div>
         </div>
-        <div class="muted small">If repos don’t load, it can be GitHub rate limits. Refresh after some time.</div>
       </div>
 
-      <div id="repoGrid" class="repo-grid" aria-live="polite"></div>
-      <div id="repoStatus" class="muted small"></div>
+      <div id="repoGrid" class="repo-grid"></div>
+
+      <p class="muted small" style="margin-top:10px">
+        If repos don’t load, it can be GitHub rate limits. Refresh after some time.
+      </p>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="section">
       <div class="section-head">
-        <h2>Contact</h2>
-        <p class="muted">Let’s connect for internships, projects, or collaborations.</p>
+        <div>
+          <h2>Contact</h2>
+          <p class="muted">Let’s connect for internships, projects, or collaborations.</p>
+        </div>
       </div>
 
       <div class="grid-2">
@@ -346,48 +438,50 @@
           <h3>Reach me</h3>
           <div class="contact-list">
             <a class="contact-item" href="mailto:bhavana.manjunath2005@gmail.com">
-              <span class="c-icon">✉</span>
-              <span>
-                <div class="c-title">Email</div>
+              <div class="c-icon">✉</div>
+              <div>
+                <div class="t-title">Email</div>
                 <div class="muted small">bhavana.manjunath2005@gmail.com</div>
-              </span>
+              </div>
             </a>
 
             <a class="contact-item" href="https://www.linkedin.com/in/bhavana-m-a164842bb" target="_blank" rel="noreferrer">
-              <span class="c-icon">in</span>
-              <span>
-                <div class="c-title">LinkedIn</div>
+              <div class="c-icon">in</div>
+              <div>
+                <div class="t-title">LinkedIn</div>
                 <div class="muted small">bhavana-m-a164842bb</div>
-              </span>
+              </div>
             </a>
 
             <a class="contact-item" href="https://github.com/bhavana23aiml" target="_blank" rel="noreferrer">
-              <span class="c-icon">⌘</span>
-              <span>
-                <div class="c-title">GitHub</div>
+              <div class="c-icon">⌘</div>
+              <div>
+                <div class="t-title">GitHub</div>
                 <div class="muted small">bhavana23aiml</div>
-              </span>
+              </div>
             </a>
           </div>
         </div>
 
         <div class="card">
           <h3>Quick Message</h3>
-          <p class="muted small">This form opens your email with a ready message (no backend needed).</p>
+          <p class="muted small">
+            This form opens your email with a ready message (no backend needed).
+          </p>
 
           <form id="mailForm">
             <div class="form-row">
-              <label class="muted" for="fName">Name</label>
+              <label class="muted small" for="fName">Name</label>
               <input id="fName" type="text" placeholder="Your name" required />
             </div>
 
             <div class="form-row">
-              <label class="muted" for="fSub">Subject</label>
-              <input id="fSub" type="text" placeholder="Internship / Project / Collaboration" required />
+              <label class="muted small" for="fSub">Subject</label>
+              <input id="fSub" type="text" placeholder="e.g., Internship opportunity" required />
             </div>
 
             <div class="form-row">
-              <label class="muted" for="fMsg">Message</label>
+              <label class="muted small" for="fMsg">Message</label>
               <textarea id="fMsg" rows="5" placeholder="Write your message..." required></textarea>
             </div>
 
@@ -395,14 +489,12 @@
           </form>
         </div>
       </div>
-    </section>
 
-    <footer class="footer">
-      <div class="muted small">
-        © <span id="year"></span> Bhavana M • Built with VS Code • Hosted on GitHub Pages
-      </div>
-      <a class="muted small" href="#top">Back to top ↑</a>
-    </footer>
+      <footer class="footer">
+        <div class="muted small">© <span id="year"></span> Bhavana M • Built with VS Code • Hosted on GitHub Pages</div>
+        <a class="muted small" href="#top">Back to top ↑</a>
+      </footer>
+    </section>
   </main>
 
   <script src="script.js"></script>
