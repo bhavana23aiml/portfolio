@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhavana M | AI & ML Portfolio</title>
+  <meta name="description" content="Portfolio of Bhavana M — AI & ML Engineer | Python | SQL | Projects | GitHub" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Background Effects -->
+  <div class="bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="grid"></div>
+  </div>
+
+  <!-- Top Nav -->
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Go to top">
+      <span class="logo">B</span>
+      <span class="brand-text">Bhavana<span class="muted">.dev</span></span>
+    </a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#github">GitHub</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="themeToggle" class="btn btn-ghost" type="button" aria-label="Toggle theme">
+        <span class="icon" aria-hidden="true">◐</span>
+        <span class="hide-sm">Theme</span>
+      </button>
+      <a class="btn btn-primary" href="resume.pdf" download>
+        Download Resume
+      </a>
+    </div>
+
+    <button id="menuBtn" class="menu-btn" type="button" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <aside id="drawer" class="drawer" aria-hidden="true">
+    <div class="drawer-card">
+      <div class="drawer-top">
+        <div class="drawer-title">Menu</div>
+        <button id="closeDrawer" class="btn btn-ghost" type="button" aria-label="Close menu">✕</button>
+      </div>
+      <a href="#about" class="drawer-link">About</a>
+      <a href="#skills" class="drawer-link">Skills</a>
+      <a href="#projects" class="drawer-link">Projects</a>
+      <a href="#github" class="drawer-link">GitHub</a>
+      <a href="#contact" class="drawer-link">Contact</a>
+      <div class="drawer-actions">
+        <button id="themeToggle2" class="btn btn-ghost" type="button">
+          ◐ Toggle Theme
+        </button>
+        <a class="btn btn-primary" href="resume.pdf" download>Download Resume</a>
+      </div>
+    </div>
+  </aside>
+
+  <main id="top" class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <div class="pill">
+          <span class="dot"></span>
+          AI & ML • Python • SQL • Projects
+        </div>
+
+        <h1 class="title">
+          Hi, I’m <span class="grad">Bhavana M</span><br />
+          <span class="subtitle">AI & Machine Learning Engineer</span>
+        </h1>
+
+        <p class="lead">
+          I build data-driven solutions with Machine Learning, Python, and practical problem-solving.
+          I enjoy creating accessible systems like voice-based assistants and intelligent analytics.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="https://github.com/bhavana23aiml" target="_blank" rel="noreferrer">
+            GitHub ↗
+          </a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/bhavana-m-a164842bb" target="_blank" rel="noreferrer">
+            LinkedIn ↗
+          </a>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-num">9.0</div>
+            <div class="stat-label">GPA</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">2+</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">AI/ML</div>
+            <div class="stat-label">Focus</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="profile-card">
+          <div class="avatar">
+            <!-- Optional: place assets/avatar.jpg -->
+            <img src="assets/avatar.jpg" alt="Bhavana M" onerror="this.style.display='none'; this.parentElement.classList.add('avatar-fallback');" />
+            <span class="avatar-letter">B</span>
+          </div>
+          <div class="profile-meta">
+            <div class="name">Bhavana M</div>
+            <div class="role">AI & ML Engineer • Bangalore</div>
+          </div>
+
+          <div class="quick">
+            <div class="quick-row">
+              <span class="badge">Python</span>
+              <span class="badge">Machine Learning</span>
+              <span class="badge">SQL</span>
+            </div>
+            <div class="quick-row">
+              <span class="badge ghost">Speech / Voice AI</span>
+              <span class="badge ghost">Data Preprocessing</span>
+            </div>
+          </div>
+
+          <div class="profile-actions">
+            <a class="btn btn-primary btn-full" href="#contact">Contact Me</a>
+            <a class="btn btn-ghost btn-full" href="resume.pdf" download>Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-head">
+        <h2>About</h2>
+        <p class="muted">A quick snapshot of who I am and what I’m aiming for.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Professional Summary</h3>
+          <p>
+            I’m an AI & ML fresher with strong fundamentals in ML algorithms, Python programming, and data-driven problem solving.
+            I’ve worked on voice-based systems and practical ML classification tasks, and I’m actively building projects that are deployable and scalable.
+          </p>
+          <div class="mini-list">
+            <div class="mini-item">✅ Data preprocessing & model evaluation</div>
+            <div class="mini-item">✅ Practical ML models + feature engineering</div>
+            <div class="mini-item">✅ Accessible AI (voice-first systems)</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Experience</h3>
+          <div class="timeline">
+            <div class="t-item">
+              <div class="t-dot"></div>
+              <div class="t-content">
+                <div class="t-title">Intern — S&I</div>
+                <div class="t-sub muted">Sep 2025 – Present</div>
+                <div class="t-text">Analyzed real-world problems and broke them into structured steps. Built optimized solutions using algorithmic thinking.</div>
+              </div>
+            </div>
+
+            <div class="t-item">
+              <div class="t-dot"></div>
+              <div class="t-content">
+                <div class="t-title">3D Design Intern — Galatic</div>
+                <div class="t-sub muted">Nov 2025 – Present</div>
+                <div class="t-text">Created/modified 3D models, optimized assets, collaborated on workflows, and documented improvements.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="edu">
+            <h4>Education</h4>
+            <p><strong>B.E. in Artificial Intelligence & Machine Learning</strong><br />
+              Cambridge Institute of Technology • GPA: 9 • Expected: May 2027</p>
+            <p><strong>Certification:</strong> Data Science for Engineers — IIT Madras</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p class="muted">Core strengths with a clean visual overview.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>AI / ML</h3>
+          <div class="bars">
+            <div class="bar">
+              <div class="bar-top"><span>Machine Learning</span><span class="muted">Strong</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width: 86%"></div></div>
+            </div>
+            <div class="bar">
+              <div class="bar-top"><span>Data Analysis</span><span class="muted">Strong</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width: 82%"></div></div>
+            </div>
+            <div class="bar">
+              <div class="bar-top"><span>Deep Learning Basics</span><span class="muted">Growing</span></div>
+              <div class="bar-track"><div class="bar-fill" style="width: 62%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Programming</h3>
+          <div class="chip-wrap">
+            <span class="chip">Python</span>
+            <span class="chip">SQL</span>
+            <span class="chip">DSA</span>
+            <span class="chip">OOP</span>
+            <span class="chip">APIs</span>
+            <span class="chip">Data Preprocessing</span>
+          </div>
+          <div class="note muted">Tip: Add your top libraries here (NumPy, Pandas, scikit-learn, etc.).</div>
+        </div>
+
+        <div class="card">
+          <h3>Tools & Soft Skills</h3>
+          <div class="chip-wrap">
+            <span class="chip">GitHub</span>
+            <span class="chip">VS Code</span>
+            <span class="chip">Teamwork</span>
+            <span class="chip">Communication</span>
+            <span class="chip">Leadership</span>
+            <span class="chip">Public Speaking</span>
+          </div>
+          <div class="note muted">Achievements: event management, volunteering, anchoring, AI collaborations.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p class="muted">Highlighted work (add links whenever you have them).</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project card">
+          <div class="project-top">
+            <div class="project-title">Voice-Based Transport Enquiry System</div>
+            <div class="tag">Voice AI</div>
+          </div>
+          <p class="muted">
+            Hands-free transport information system: captures speech, converts to text, detects intent, and returns relevant transport details.
+          </p>
+          <div class="project-bullets">
+            <div>• Speech-to-text + intent detection pipeline</div>
+            <div>• Designed for accessibility and faster queries</div>
+            <div>• API-ready backend approach</div>
+          </div>
+          <div class="project-actions">
+            <a class="btn btn-ghost" href="https://github.com/bhavana23aiml" target="_blank" rel="noreferrer">Code ↗</a>
+            <a class="btn btn-ghost" href="#contact">Request Demo</a>
+          </div>
+        </article>
+
+        <article class="project card">
+          <div class="project-top">
+            <div class="project-title">Voice-Based Stress Detection System</div>
+            <div class="tag">ML</div>
+          </div>
+          <p class="muted">
+            Detects stress from speech by extracting acoustic features (pitch, energy, MFCCs) and classifying using ML models.
+          </p>
+          <div class="project-bullets">
+            <div>• Feature extraction + preprocessing</div>
+            <div>• Real-time analysis concept</div>
+            <div>• Useful for HCI and mental health monitoring</div>
+          </div>
+          <div class="project-actions">
+            <a class="btn btn-ghost" href="https://github.com/bhavana23aiml" target="_blank" rel="noreferrer">Code ↗</a>
+            <a class="btn btn-ghost" href="#contact">Collaborate</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- GITHUB -->
+    <section id="github" class="section">
+      <div class="section-head">
+        <h2>GitHub Repositories</h2>
+        <p class="muted">Auto-fetched from your GitHub profile (public repos).</p>
+      </div>
+
+      <div class="github-controls card">
+        <div class="row">
+          <div class="input-wrap">
+            <label for="repoSearch" class="muted">Search repos</label>
+            <input id="repoSearch" type="text" placeholder="e.g., voice, ml, python..." />
+          </div>
+
+          <div class="input-wrap">
+            <label for="repoSort" class="muted">Sort</label>
+            <select id="repoSort">
+              <option value="updated">Recently updated</option>
+              <option value="stars">Most starred</option>
+              <option value="name">Name (A–Z)</option>
+            </select>
+          </div>
+
+          <a class="btn btn-primary" href="https://github.com/bhavana23aiml" target="_blank" rel="noreferrer">Open GitHub ↗</a>
+        </div>
+        <div class="muted small">If repos don’t load, it can be GitHub rate limits. Refresh after some time.</div>
+      </div>
+
+      <div id="repoGrid" class="repo-grid" aria-live="polite"></div>
+      <div id="repoStatus" class="muted small"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p class="muted">Let’s connect for internships, projects, or collaborations.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Reach me</h3>
+          <div class="contact-list">
+            <a class="contact-item" href="mailto:bhavana.manjunath2005@gmail.com">
+              <span class="c-icon">✉</span>
+              <span>
+                <div class="c-title">Email</div>
+                <div class="muted small">bhavana.manjunath2005@gmail.com</div>
+              </span>
+            </a>
+
+            <a class="contact-item" href="https://www.linkedin.com/in/bhavana-m-a164842bb" target="_blank" rel="noreferrer">
+              <span class="c-icon">in</span>
+              <span>
+                <div class="c-title">LinkedIn</div>
+                <div class="muted small">bhavana-m-a164842bb</div>
+              </span>
+            </a>
+
+            <a class="contact-item" href="https://github.com/bhavana23aiml" target="_blank" rel="noreferrer">
+              <span class="c-icon">⌘</span>
+              <span>
+                <div class="c-title">GitHub</div>
+                <div class="muted small">bhavana23aiml</div>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Quick Message</h3>
+          <p class="muted small">This form opens your email with a ready message (no backend needed).</p>
+
+          <form id="mailForm">
+            <div class="form-row">
+              <label class="muted" for="fName">Name</label>
+              <input id="fName" type="text" placeholder="Your name" required />
+            </div>
+
+            <div class="form-row">
+              <label class="muted" for="fSub">Subject</label>
+              <input id="fSub" type="text" placeholder="Internship / Project / Collaboration" required />
+            </div>
+
+            <div class="form-row">
+              <label class="muted" for="fMsg">Message</label>
+              <textarea id="fMsg" rows="5" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <button class="btn btn-primary btn-full" type="submit">Send Email</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="muted small">
+        © <span id="year"></span> Bhavana M • Built with VS Code • Hosted on GitHub Pages
+      </div>
+      <a class="muted small" href="#top">Back to top ↑</a>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
